@@ -11,4 +11,8 @@ public class CafeDto {
     private String name;
     private String address;
     private List<BranchDto> branchDto;
+
+    public CafeDto(String name, String address) {
+    }
+
 }

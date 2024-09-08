@@ -25,4 +25,6 @@ public class Cafe {
     @OneToMany(mappedBy = "cafe", cascade = CascadeType.ALL)
     private List<Branch> branches;
 
+    public Cafe(String name, String address) {
+    }
 }
