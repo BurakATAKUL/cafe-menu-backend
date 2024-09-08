@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Entity
 @Table(name = "menu_items")
-public class MenuItem {
+public class MenuItem {//menüdeki tekil yemekler örneğin omlet gibi
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
