@@ -21,10 +21,15 @@ public class Cafe {
     private Long id;
     private String name;
     private String address;
+    private String phone;
 
     @OneToMany(mappedBy = "cafe", cascade = CascadeType.ALL)
     private List<Branch> branches;
 
-    public Cafe(String name, String address) {
+    public Cafe(Long id,String name, String address, String phone) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
     }
 }

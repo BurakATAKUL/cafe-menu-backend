@@ -36,4 +36,10 @@ public class Branch { //Şube
     @OneToMany(mappedBy = "branch", cascade = CascadeType.ALL)
     private List<Menu> menus ;
 
+    public Branch(String name, String location, Long cafe, String contact) {
+        this.name = name;
+        this.location = location;
+        this.cafe = getCafe();
+        this.contact = contact;
+    }
 }

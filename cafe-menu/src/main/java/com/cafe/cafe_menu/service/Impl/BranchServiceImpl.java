@@ -22,7 +22,7 @@ public class BranchServiceImpl implements BranchService {
     @Override
     public Branch addBranch(BranchDto branchDto) {
         try {
-            Cafe cafe = cafeRepository.findById(branchDto.getCafeId())
+            Cafe cafe = cafeRepository.findById(branchDto.getCafe())
                     .orElseThrow(() -> new RuntimeException("Cafe not found"));
 
             Branch branch = new Branch();
@@ -37,4 +37,8 @@ public class BranchServiceImpl implements BranchService {
             throw e;
         }
     }
+
+
+
+
 }

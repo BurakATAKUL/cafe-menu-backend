@@ -10,4 +10,10 @@ public interface CafeService {
     Cafe addCafe(CafeDto cafeDto);
 
     List<CafeDto> getAllCafes();
+
+    CafeDto updateCafe(Long cafeId,CafeDto updateCafe);
+
+    void deleteCafe(Long cafeId);
+
+    CafeDto getCafeById(Long cafeId);
 }
